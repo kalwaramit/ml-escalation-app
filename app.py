@@ -16,6 +16,9 @@ import joblib
 import time
 import warnings
 warnings.filterwarnings('ignore')
+import os
+
+port = int(os.environ.get("PORT", 8501))
 
 # ── PAGE CONFIG ──────────────────────────────────────────────
 st.set_page_config(
@@ -534,4 +537,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    st.write("App running...")
